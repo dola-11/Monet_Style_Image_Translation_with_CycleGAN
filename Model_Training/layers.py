@@ -8,7 +8,7 @@ class layers:
     def __init__(self):
         pass
 
-    def downsample(filters, size, apply_norm=True):
+    def downsample(self,filters, size, apply_norm=True):
         initializer = tf.random_normal_initializer(0., 0.02)
         result = tf.keras.Sequential()
         result.add(L.Conv2D(filters, size, strides=2, padding='same',
@@ -18,7 +18,7 @@ class layers:
         result.add(L.LeakyReLU())
         return result
 
-    def upsample(filters, size, apply_dropout=False):
+    def upsample(self,filters, size, apply_dropout=False):
         initializer = tf.random_normal_initializer(0., 0.02)
         result = tf.keras.Sequential()
         result.add(L.Conv2DTranspose(filters, size, strides=2, padding='same',
