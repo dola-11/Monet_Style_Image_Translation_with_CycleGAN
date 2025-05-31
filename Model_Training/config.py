@@ -1,0 +1,9 @@
+HEIGHT = 512
+WIDTH = 512
+CHANNELS = 3
+EPOCHS = 200
+BATCH_SIZE = 1
+BUFFER_SIZE = 1000
+
+MONET_DIR = "Datasets/monet_jpg"
+PHOTO_DIR = "Datasets/photo_jpg"
