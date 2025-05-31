@@ -8,7 +8,7 @@ class Models:
     def __init__(self):
         pass
 
-    def Generator():
+    def Generator(self):
         inputs = L.Input(shape=[HEIGHT, WIDTH, CHANNELS])
         down_stack = [
             layers.downsample(64, 4, apply_norm=False),
@@ -30,7 +30,7 @@ class Models:
         x = last(x)
         return Model(inputs=inputs, outputs=x)
 
-    def Discriminator():
+    def Discriminator(self):
         initializer = tf.random_normal_initializer(0., 0.02)
         inp = L.Input(shape=[HEIGHT, WIDTH, CHANNELS])
         x = layers.downsample(64, 4, False)(inp)
