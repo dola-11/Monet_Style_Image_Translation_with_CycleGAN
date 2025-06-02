@@ -34,4 +34,4 @@ This setup enforces:
 - `D<sub>Y</sub>` distinguishes real vs generated Monet images
 - `D<sub>X</sub>` distinguishes real vs generated photos
 
-The architecture uses 9 ResNet blocks for 256×256 images, consistent with the original [CycleGAN paper](https://www.tensorflow.org/tutorials/generative/cyclegan).
+The architecture uses 9 ResNet blocks for 512×512images, consistent with the original [CycleGAN paper](https://www.tensorflow.org/tutorials/generative/cyclegan).
